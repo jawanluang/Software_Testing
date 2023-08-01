@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MetricsCalculatorTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MetricsCalculatorTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/edu.depaul.metrics.html">edu.depaul.metrics</a> &gt; MetricsCalculatorTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">44</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.067s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">When sessions per hour is 60 and session length is 15 an downtime is 60, affected users is 75</td>
+<td class="success">affected_users_is_75()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">When sessions per hour is 12 and session length is 15 an downtime is 30, affected users is 9</td>
+<td class="success">affected_users_is_9()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Downtimes of 75,3, and 7 should result is availability of 99.15%</td>
+<td class="success">availability_test1()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">5 Downtimes of 2 should result is availability of 99.9%</td>
+<td class="success">availability_test2()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAvailability: when a downtime event is greater than the scope, calculator throws an exception</td>
+<td class="success">badDownTimeEventAvailability()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTBF: when a downtime event is greater than the scope, calculator throws an exception</td>
+<td class="success">badDownTimeEventMTBF()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTTR: when a downtime event is greater than the scope, calculator throws an exception</td>
+<td class="success">badDownTimeEventMTTR()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Reliability: when the downtime event is greater than the scope, calculator throws an exception</td>
+<td class="success">badDownTimeEventReliability()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAvailability: when scope is equal to 0, calculator should throw an exception</td>
+<td class="success">badScopeAvailability1()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAvailability: when scope is negative, calculator should throw an exception</td>
+<td class="success">badScopeAvailability2()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTBF: when scope is equal to 0, calculator should throw an exception</td>
+<td class="success">badScopeMTBF1()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTBF: when scope is negative, calculator should throw an exception</td>
+<td class="success">badScopeMTBF2()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTTR: when scope is equal to 0, calculator should throw an exception</td>
+<td class="success">badScopeMTTR1()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTTR: when scope is negative, calculator should throw an exception</td>
+<td class="success">badScopeMTTR2()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Reliability: when scope is zero, calculator throws an exception</td>
+<td class="success">badScopeReliability1()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Reliability: when scope is negative, calculator throws an exception</td>
+<td class="success">badScopeReliability2()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAvailability: when events is empty, calculator should throw an exception</td>
+<td class="success">emptyAvailability()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTBF: when events is empty, calculator should throw an exception</td>
+<td class="success">emptyMTBF()</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTBF: when events is empty, calculator should throw an exception</td>
+<td class="success">emptyMTTR()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">when affected users is 75, reliability is 94.791</td>
+<td class="success">getReliability1()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">when affected users is 9, reliability is 94.791</td>
+<td class="success">getReliability2()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTBF should be 3331.67 for given events</td>
+<td class="success">mtbf_test1()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTBF should be 2014 for the given events</td>
+<td class="success">mtbf_test2()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTTR should be 28.33 for the given events</td>
+<td class="success">mttr_test1()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTTR should be 2 for the given events</td>
+<td class="success">mttr_test2()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAvailability: when an event in events is negative, calculator should throw an exception</td>
+<td class="success">negativeAvailability()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAffected: when the downtime event is negative, calculator throws an exception</td>
+<td class="success">negativeDownTimeGetAffected()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Reliability: when the downtime event is negative, calculator throws an exception</td>
+<td class="success">negativeDownTimeReliability()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAffected: when all parameters are negative, calculator throws an exception</td>
+<td class="success">negativeGetAffected()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTBF: when an event in events is negative, calculator should throw an exception</td>
+<td class="success">negativeMTBF()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTTR: when an event in events is negative, calculator should throw an exception</td>
+<td class="success">negativeMTTR()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAffected: when the session length is negative, calculator throws an exception</td>
+<td class="success">negativeSessionLengthGetAffected()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Reliability: when the sessions length is negative, calculator throws an exception</td>
+<td class="success">negativeSessionLengthReliability()</td>
+<td class="success">0.024s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAffected: when the session per hour is negative, calculator throws an exception</td>
+<td class="success">negativeSessionsPerHourGetAffected()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Reliability: when the sessions per hour is negative, calculator throws an exception</td>
+<td class="success">negativeSessionsPerHourReliability()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">getAvailability: when the total downtime events is greater than the scope, calculator throws an exception</td>
+<td class="success">negativeUptimeAvailability()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">MTBF: when the total downtime events is greater than the scope, calculator throws an exception</td>
+<td class="success">negativeUptimeMTBF()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAffected: when the downtime event is zero, calculator throws an exception</td>
+<td class="success">zeroDownTimeGetAffected()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Reliability: when the downtime event is zero, calculator throws an exception</td>
+<td class="success">zeroDownTimeReliability()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAffected: when all parameters are zero, calculator throws an exception</td>
+<td class="success">zeroGetAffected()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAffected: when the session length is zero, calculator throws an exception</td>
+<td class="success">zeroSessionLengthGetAffected()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Reliability: when the sessions length is zero, calculator throws an exception</td>
+<td class="success">zeroSessionLengthReliability()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">GetAffected: when the sessions per hour is zero, calculator throws an exception</td>
+<td class="success">zeroSessionsPerHourGetAffected()</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Reliability: when the sessions per hour is zero, calculator throws an exception</td>
+<td class="success">zeroSessionsPerHourReliability()</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1</a> at Sep 26, 2021, 12:56:51 PM</p>
+</div>
+</div>
+</body>
+</html>

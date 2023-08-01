@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.depaul.metrics.MetricsCalculatorTest" tests="44" skipped="0" failures="0" errors="0" timestamp="2021-09-26T17:56:51" hostname="DESKTOP-IS7VQEI" time="0.09">
+  <properties/>
+  <testcase name="Reliability: when the sessions length is negative, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.024"/>
+  <testcase name="Reliability: when the sessions per hour is negative, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="MTBF: when events is empty, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.003"/>
+  <testcase name="MTBF: when events is empty, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="GetAffected: when the session length is negative, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="getAvailability: when scope is equal to 0, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="getAvailability: when scope is negative, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.002"/>
+  <testcase name="GetAffected: when the session per hour is negative, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="MTBF should be 3331.67 for given events" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.002"/>
+  <testcase name="MTBF should be 2014 for the given events" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="when affected users is 75, reliability is 94.791" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="when affected users is 9, reliability is 94.791" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="getAvailability: when events is empty, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.002"/>
+  <testcase name="MTBF: when scope is equal to 0, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="MTBF: when scope is negative, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.002"/>
+  <testcase name="MTTR: when scope is equal to 0, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.0"/>
+  <testcase name="MTTR: when scope is negative, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="Reliability: when the sessions length is zero, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.0"/>
+  <testcase name="Reliability: when the sessions per hour is zero, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.0"/>
+  <testcase name="GetAffected: when the session length is zero, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.0"/>
+  <testcase name="getAvailability: when the total downtime events is greater than the scope, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="When sessions per hour is 60 and session length is 15 an downtime is 60, affected users is 75" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.0"/>
+  <testcase name="GetAffected: when the sessions per hour is zero, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="Reliability: when the downtime event is negative, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="GetAffected: when the downtime event is negative, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="MTBF: when the total downtime events is greater than the scope, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="Reliability: when scope is zero, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="Reliability: when scope is negative, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="MTBF: when an event in events is negative, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="MTTR: when an event in events is negative, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="MTBF: when a downtime event is greater than the scope, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="MTTR: when a downtime event is greater than the scope, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="getAvailability: when an event in events is negative, calculator should throw an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="GetAffected: when all parameters are negative, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="Downtimes of 75,3, and 7 should result is availability of 99.15%" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="5 Downtimes of 2 should result is availability of 99.9%" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="getAvailability: when a downtime event is greater than the scope, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="When sessions per hour is 12 and session length is 15 an downtime is 30, affected users is 9" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.0"/>
+  <testcase name="Reliability: when the downtime event is zero, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="Reliability: when the downtime event is greater than the scope, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="MTTR should be 28.33 for the given events" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="MTTR should be 2 for the given events" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="GetAffected: when the downtime event is zero, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <testcase name="GetAffected: when all parameters are zero, calculator throws an exception" classname="edu.depaul.metrics.MetricsCalculatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
