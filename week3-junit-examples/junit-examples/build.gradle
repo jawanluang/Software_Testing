@@ -1,0 +1,52 @@
+plugins {
+    id 'java-library'
+}
+
+group 'edu.depaul'
+version '1.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.6.1'
+}
+
+def user = 'week3'
+
+task packageDistribution(type: Zip) {
+    dependsOn check
+    archiveFileName = "${user}-${rootProject.name}.zip"
+    destinationDirectory = file("$buildDir/dist")
+
+    from("$projectDir") {
+        include "src/**/*"
+        include "build.gradle"
+        include "gradlew"
+        include "gradlew.bat"
+        include "settings.gradle"
+
+        exclude "src/test/java/edu/depaul/vehicle/VehicleTeacher*"
+    }
+
+    into("${rootProject.name}")
+}
+
+test {
+    useJUnitPlatform()
+    afterTest { desc, result ->
+        logger.quiet "Executing test ${desc.name} [${desc.className}] with result: ${result.resultType}"
+    }
+}
+
+check {
+    finalizedBy packageDistribution
+}
