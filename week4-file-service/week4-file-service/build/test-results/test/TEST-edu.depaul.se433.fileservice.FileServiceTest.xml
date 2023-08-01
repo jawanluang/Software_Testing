@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.depaul.se433.fileservice.FileServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-09T21:28:15" hostname="DESKTOP-IS7VQEI" time="0.01">
+  <properties/>
+  <testcase name="no exception from deleting non-existant file" classname="edu.depaul.se433.fileservice.FileServiceTest" time="0.007"/>
+  <testcase name="Should return a list of files in current directory" classname="edu.depaul.se433.fileservice.FileServiceTest" time="0.002"/>
+  <system-out><![CDATA[deleting: /no/such/file
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

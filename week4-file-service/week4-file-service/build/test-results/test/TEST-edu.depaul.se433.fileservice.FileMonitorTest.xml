@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.depaul.se433.fileservice.FileMonitorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2021-10-09T21:28:14" hostname="DESKTOP-IS7VQEI" time="0.484">
+  <properties/>
+  <testcase name="When there is an empty list, then FileMonitor doesn't throw an exception" classname="edu.depaul.se433.fileservice.FileMonitorTest" time="0.461"/>
+  <testcase name="When there are no .tmp files, then FileMonitor makes no delete() calls" classname="edu.depaul.se433.fileservice.FileMonitorTest" time="0.019"/>
+  <testcase name="When there are .tmp files, then FileMonitor returns expected sub list from a call to clean" classname="edu.depaul.se433.fileservice.FileMonitorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
