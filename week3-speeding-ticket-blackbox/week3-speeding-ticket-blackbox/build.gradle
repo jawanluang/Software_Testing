@@ -1,0 +1,53 @@
+plugins {
+    id 'java-library'
+}
+def user = 'JLUANGNI'
+
+group 'edu.depaul'
+version '1.0-SNAPSHOT'
+
+compileJava {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'lib'
+    }
+}
+
+dependencies {
+    implementation files('lib/speeding-ticket-1.0-SNAPSHOT.jar')
+    testImplementation('org.junit.jupiter:junit-jupiter:5.7.1')
+}
+
+test {
+    useJUnitPlatform()
+    afterTest { desc, result ->
+        logger.quiet "Executing test ${desc.name} [${desc.className}] with result: ${result.resultType}"
+    }
+}
+
+task packageDistribution(type: Zip) {
+    dependsOn test
+    archiveFileName = "${user}-${rootProject.name}.zip"
+    destinationDirectory = file("$buildDir/dist")
+
+    from("$projectDir") {
+        include "src/**/*"
+        include "lib/*"
+        include "build.gradle"
+        include "gradlew"
+        include "gradlew.bat"
+        include "settings.gradle"
+    }
+
+    into("${user}-${rootProject.name}")
+}
+
+check {
+    finalizedBy packageDistribution
+}
+
